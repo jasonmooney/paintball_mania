@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paintball Mania</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Paintball Mania 🎨</h1>
+  <canvas id="gameCanvas" width="800" height="600"></canvas>
+  <div id="ui">
+    <span id="score">Score: 0</span>
+    <span id="timer">Time: 60</span>
+    <span id="level">Level: 1</span>
+  </div>
+  <div id="controls">
+    <button id="highScoreBtn">🏆 High Scores</button>
+    <button id="newGameBtn">🎮 New Game</button>
+  </div>
+  <audio id="splatSound" src="assets/splat.mp3" preload="auto"></audio>
+  <script src="game.js"></script>
+</body>
+</html>

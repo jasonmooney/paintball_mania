@@ -1,0 +1,88 @@
+body {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 50%, #ff9a9e 100%);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  color: #ff6b35;
+  text-shadow: 3px 3px 0px #ff4500, 6px 6px 10px rgba(0,0,0,0.3);
+  margin: 20px 0;
+  transform: perspective(500px) rotateX(15deg);
+}
+
+#gameCanvas {
+  border: 8px solid #ff69b4;
+  background: #fffbe6;
+  box-shadow: 
+    0 0 30px #ffb347,
+    inset 0 0 20px rgba(255,255,255,0.3),
+    0 15px 30px rgba(0,0,0,0.2);
+  margin-top: 20px;
+  border-radius: 15px;
+  cursor: crosshair;
+  transform: perspective(1000px) rotateX(5deg);
+}
+
+#ui {
+  margin-top: 30px;
+  font-size: 1.8em;
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#ui span {
+  background: linear-gradient(45deg, #ff6b35, #f7931e);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: 
+    0 5px 15px rgba(0,0,0,0.2),
+    inset 0 2px 5px rgba(255,255,255,0.3);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  transform: perspective(300px) rotateX(10deg);
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+#ui span:hover {
+  transform: perspective(300px) rotateX(10deg) scale(1.1);
+}
+
+#controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#controls button {
+  background: linear-gradient(45deg, #ff6b35, #f7931e);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 
+    0 5px 15px rgba(0,0,0,0.2),
+    inset 0 2px 5px rgba(255,255,255,0.3);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  transform: perspective(300px) rotateX(10deg);
+  transition: transform 0.2s ease;
+}
+
+#controls button:hover {
+  transform: perspective(300px) rotateX(10deg) scale(1.1);
+}
+
+#controls button:active {
+  transform: perspective(300px) rotateX(15deg) scale(0.95);
+}
